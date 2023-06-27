@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-function Detail() {
+export default function Detail() {
   const { id } = useParams();
   const getMovie = async () => {
     const json = await (
@@ -13,5 +13,3 @@ function Detail() {
   }, []);
   return <h1>Detail</h1>;
 }
-
-export default Detail;
